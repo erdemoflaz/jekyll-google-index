@@ -16,7 +16,7 @@ Wordpress ve blogger da olduğu gibi sizde kendi jekyll bloglarınızda kategori
 
 ### Categories/Tags layouts
 
-plugins klasörünün altına oluşturduğumuz dosyalardan sonra layout klasörünün altına `categories.html` ve `tags.html` dosyalarını da oluşturun.
+`plugins` klasörünün altına oluşturduğumuz dosyalardan sonra layout klasörünün altına `categories.html` ve `tags.html` dosyalarını da oluşturun.
 
 
 
@@ -28,7 +28,7 @@ Oluşturduğumuz **Category Layout:** dosyasına şu kodları ekleyin
 
 Ardından,
 
-Oluiturduğumuz **Tag Layout:** dosyasına da  şu kodları ekleyin
+Oluşturduğumuz **Tag Layout:** dosyasına da  şu kodları ekleyin
 
 		{% for post in site.tags[page.tag] %}
 			burada postlarınızın özeti, thumbnail'ı felan olabilir
@@ -37,6 +37,6 @@ Oluiturduğumuz **Tag Layout:** dosyasına da  şu kodları ekleyin
 
 ## Önemli Not:
 
-Bu işlemleri uygulayıp, localinizde çalıitırabilirsiniz. Herşey tıkır tıkır çalışacaktır fakat, asıl önemli olan nokta ise dosyaları pushlayıp site adresinize çıkardığınızda ise github'ın aldığı güvenlik önlemlerine takılacağınız için kodlar çalışmayacak.
+Bu işlemleri uygulayıp, localinizde çalıştırabilirsiniz. Herşey tıkır tıkır çalışacaktır fakat, asıl önemli olan nokta ise dosyaları pushlayıp site adresinize çıkardığınızda ise GitHub'ın aldığı güvenlik önlemlerine takılacağınız için kodlar çalışmayacak.
 
 Bunun için de `_site` klasörü altına cachelenen categories ve tags klasörlerini ana dizine çıkartıp öyle pushlarsanız yaptıklarınız çalışmaya başlayacaktır.
